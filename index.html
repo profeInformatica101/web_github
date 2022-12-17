@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>URL Page GitHub</title>
+</head>
+<body>
+<div id="menu">
+Usuario:<input id="usuario" type="text" onchage="cambio()"> <br>
+Repositorio: <input id="repo" type="text" onchange="cambio()"><br>
+</div>
+<div id="salida">
+ 
+</div>
+  
+
+<script>
+  let alumno = new Object();
+  
+  functionn cambio(){
+     var salida = "";
+      this.alumno.usuario = document.getElementById("usuario").value;
+      this.alumno.repo = document.getElementById("repo").value;
+    
+      salida = "https://"+ this.alumno.usuario + ".github.io/"+  this.alumno.repo  + "/";
+    
+    document.getElementById("salida").innnerHTML = "<h1><a href='" +  salida + "'" + ">Enlace Web</a></h1>";
+    
+  }
+  
+
+</script>
+
+</body>
+
+
+<html>
